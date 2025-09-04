@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bdaygreetingsz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+20&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jersey+20&family=Press+Start+2P&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="visual.css">
+</head>
+
+<body>
+  <header>
+    <h1 class="happy">HAPPY</h1>
+    <h1 class="birthday">☆BIRTHDAY☆</h1>
+  </header>
+
+  <button class="name" id="hugeButton">HBBD</button>
+  <div class="counter" id="counter">Clicks:</div>
+
+  <div class="surprise-message" id="surpriseMessage">🎉SURPRISE!🎂</div>
+  </div>
+
+</body>
+
+
+<style>
+  .surprise-message {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    margin-top: 20px;
+  }
+
+  .counter {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    margin-top: 30px;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100dvh;
+
+    /* background images */
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  header {
+    text-align: center;
+    /* center ALL header text */
+  }
+
+  .happy {
+    font-family: 'Jersey 20', cursive;
+    color: white;
+    margin: 0 auto;
+    font-size: 9rem;
+    letter-spacing: 1.5cm;
+    text-size-adjust: 100%;
+    animation: glow 0.2s ease-in-out infinite alternate;
+    overflow-x: hidden;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.9);
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 20px #091ba4, 0 0 30px #055f98, 0 0 40px #3912bc;
+    }
+
+    to {
+      text-shadow: 0 0 20px #410239, 0 0 30px #9c19c4, 0 0 40px #ff85e1;
+    }
+  }
+
+  .birthday {
+    margin-top: 0;
+    font-size: 4rem;
+    letter-spacing: 0.5cm;
+    font-style: italic;
+    width: auto;
+    height: auto;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 3px 3px 2px rgba(33, 37, 255, 0.9);
+    color: black;
+    justify-content: center;
+    padding: 0px;
+    animation: shrink 0.5s ease-in-out infinite alternate;
+  }
+
+  @keyframes shrink {
+    from {
+      transform: scale(1);
+    }
+
+    to {
+      transform: scale(0.9);
+    }
+  }
+
+
+  .name {
+    background: radial-gradient(circle,
+        rgba(231, 230, 249, 0.886),
+        rgba(234, 229, 229, 0.5));
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    font: bold 40px 'Bebas Neue', sans-serif;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    padding: 20px 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0;
+    transition: all 0.3s ease;
+    line-height: 1;
+    border-radius: 100px;
+    transition: all 0.3s;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+    text-shadow: 3px 3px 5px rgba(0, 1, 1, 10);
+
+  }
+
+  .name:hover {
+    background-color: rgb(15, 62, 183);
+    opacity: 0.9;
+    color: beige;
+    transform: translateY(-3px);
+  }
+
+  .name:active {
+    transform: translateY(0);
+    background-color: rgb(0, 16, 74);
+  }
+</style>
+
+</html>
